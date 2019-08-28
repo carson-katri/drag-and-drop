@@ -4,6 +4,13 @@ Simple drag and drop for SwiftUI
 
 ![Sample GIF](Resources/SampleGIF.gif)
 
+## Installation
+You can install via the Swift Package Manager:
+
+`File > Swift Packages > Add Package Dependency...`, then paste in `https://github.com/carson-katri/drag-and-drop`
+
+## Usage
+
 First, add the `DragDropManager` environment object:
 ```swift
 ContentView().environmentObject(DragDropManager())
