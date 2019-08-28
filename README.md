@@ -4,6 +4,11 @@ Simple drag and drop for SwiftUI
 
 ![Sample GIF](Resources/SampleGIF.gif)
 
+First, add the `DragDropManager` environment object:
+```swift
+ContentView().environmentObject(DragDropManager())
+```
+
 Example:
 ```swift
 VStack {

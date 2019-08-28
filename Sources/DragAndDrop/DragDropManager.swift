@@ -12,6 +12,10 @@ public class DragDropManager: ObservableObject {
     @Published public var dragViews: [UUID : (Any, UUID?)] = [:]
     @Published public var dropViews: [UUID : (CGRect, (UUID, Any) -> Void)] = [:]
     
+    public init() {
+        
+    }
+    
     func addDragView(_ uuid: UUID, data: Any, droppedAt: UUID? = nil) {
         print("Registered \(uuid)")
         dragViews[uuid] = (data, droppedAt)
